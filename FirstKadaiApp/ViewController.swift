@@ -9,6 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var label: UILabel!
     @IBOutlet weak var RedButton: UIButton!
     @IBOutlet weak var GreenButton: UIButton!
     @IBOutlet weak var BlueButton: UIButton!
@@ -30,6 +31,18 @@ class ViewController: UIViewController {
         BlueButton.layer.borderWidth = 1.0
     }
 
-
+    @IBAction func ChangeRed(_ sender: Any) {
+        label.textColor = UIColor.red
+    }
+    @IBAction func ChangeGreen(_ sender: Any) {
+        label.textColor = UIColor.green
+    }
+    @IBAction func ChangeBlue(_ sender: Any) {
+        label.textColor = UIColor.blue
+    }
+    
+    
+    
 }
 
+//アプリ終了後Thread 1: signal SIGTERMが出る理由

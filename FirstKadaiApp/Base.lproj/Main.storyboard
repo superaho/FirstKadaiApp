@@ -16,6 +16,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FirstKadaiApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -35,6 +36,9 @@
                                 <state key="normal" title="赤にする">
                                     <color key="titleColor" systemColor="systemPinkColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="ChangeRed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UZ5-Z9-lGQ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sEn-OW-O7j">
                                 <rect key="frame" x="98" y="620" width="219" height="53"/>
@@ -43,6 +47,9 @@
                                 <state key="normal" title="緑にする">
                                     <color key="titleColor" systemColor="systemGreenColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="ChangeGreen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DMp-kH-ved"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DaK-FF-65G">
                                 <rect key="frame" x="98" y="733" width="219" height="53"/>
@@ -51,6 +58,9 @@
                                 <state key="normal" title="青にする">
                                     <color key="titleColor" systemColor="systemBlueColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="ChangeBlue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z0X-2x-wYo"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -60,9 +70,9 @@
                         <outlet property="BlueButton" destination="DaK-FF-65G" id="lSO-gV-TlV"/>
                         <outlet property="GreenButton" destination="sEn-OW-O7j" id="cdV-U1-E3D"/>
                         <outlet property="RedButton" destination="2TS-XJ-4v6" id="s5m-2T-uGg"/>
+                        <outlet property="label" destination="GEr-B3-apW" id="dev-vW-UzY"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="28.985507246376812" y="88.392857142857139"/>
         </scene>
